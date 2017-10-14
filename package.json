@@ -17,6 +17,12 @@
     "node": "6.10.2",
     "npm": "3.10.10"
   },
+  "files": [
+    "node_modules",
+    "package.json",
+    "server.js",
+    "dist/"
+  ],
   "private": true,
   "dependencies": {
     "@angular/cli": "1.2.7",
