@@ -18,9 +18,10 @@
     "npm": "3.10.10"
   },
   "files": [
-    "node_modules",
+    "node_modules/",
     "package.json",
     "server.js",
+    "README.md",
     "dist/"
   ],
   "private": true,
