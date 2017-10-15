@@ -1,0 +1,10 @@
+e2e/
+src
+.angular-cli.json
+.editorconfig
+.gitignore
+.nvmrc
+karma.conf.js
+protractor.conf.js
+tsconfig.json
+tslint.json
