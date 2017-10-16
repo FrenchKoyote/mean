@@ -34,19 +34,15 @@ router.get('/users', (req, res) => {
     connection((db) => {
     
         db.createCollection("users", function(err, res) {
+            if (err) sendError(err, res);
             console.log("Collection created!");
         })
-        .catch((err) => {
-            sendError(err, res);
-        });
 
         var myobj = { name: "User 1", address: "User 1 address" };
         db.collection("customers").insertOne(myobj, function(err, res) {
+            if (err) sendError(err, res);
             console.log("1 document inserted");
         })
-        .catch((err) => {
-            sendError(err, res);
-        });
 
         db.collection('users')
             .find()
