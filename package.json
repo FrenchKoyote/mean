@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "clean:src" : "rm -rf src",
-    "clean:e2e" : "rm -rf e2e",
+    "clean:src": "rm -rf src",
+    "clean:e2e": "rm -rf e2e",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build -prod",
@@ -19,11 +19,11 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "1.2.7",
-    "@angular/compiler-cli": "^4.0.0",
     "@angular/animations": "^4.0.0",
+    "@angular/cli": "1.2.7",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
     "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
@@ -33,6 +33,7 @@
     "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
     "express": "^4.16.2",
+    "mongodb": "^2.2.33",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"
   },
