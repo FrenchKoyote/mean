@@ -39,7 +39,7 @@ router.get('/users', (req, res) => {
         })
 
         var myobj = { name: "User 1", address: "User 1 address" };
-        db.collection("customers").insertOne(myobj, function(err, res) {
+        db.collection("users").insertOne(myobj, function(err, res) {
             if (err) sendError(err, res);
             console.log("1 document inserted");
         })
