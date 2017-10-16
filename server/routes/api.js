@@ -48,7 +48,7 @@ router.get('/users', (req, res) => {
             .find()
             .toArray()
             .then((users) => {
-                console.log("# users found:" + users.count);
+                console.log("# users found:" + users);
                 response.data = users;
                 res.json(response);
             })
