@@ -5,7 +5,7 @@ const ObjectID = require('mongodb').ObjectID;
 
 // Connect
 const connection = (closure) => {
-    return MongoClient.connect('mongodb://localhost:27017/mean', (err, db) => {
+    return MongoClient.connect('mongodb://23997:15Niovxi8=!@localhost:27017/mean', (err, db) => {
         if (err) throw err;
         closure(db);
     });
@@ -32,11 +32,19 @@ router.get('/users', (req, res) => {
     //res.json(response);
 
     connection((db) => {
+    
     db.createCollection("users", function(err, res) {
         if (err) throw err;
         console.log("Collection created!");
         db.close();
         });
+
+    var myobj = { name: "User 1", address: "User 1 address" };
+    db.collection("customers").insertOne(myobj, function(err, res) {
+        if (err) throw err;
+        console.log("1 document inserted");
+        db.close();
+    });
 
     db.collection('users')
         .find()
